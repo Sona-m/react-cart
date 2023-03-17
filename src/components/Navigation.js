@@ -20,14 +20,14 @@ function Navigation(){
     return(
     <>
       <nav className="container mx-auto flex justify-between items-center py-4 px-20">
-       <Link to="/react-cart">
+       <Link to="">
           <img style ={{height : 45}}src={Logo} alt="logo" />
        </Link> 
        <ul className="flex items-center">
-         <li className="mr-4"><Link to="/react-cart">Home</Link></li>
-         <li className="mr-4"><Link to="/react-cart/products">Products</Link></li>
+         <li className="mr-4"><Link to="">Home</Link></li>
+         <li className="mr-4"><Link to="/products">Products</Link></li>
          <li>
-          <Link to="/react-cart/cart">
+          <Link to="/cart">
            <div  style={cartStyle}>
              <span className="mr-2">{cart.totalItems ? cart.totalItems : 0}</span>
              <img src={Cart} alt="cart-icon" />

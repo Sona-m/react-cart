@@ -35,10 +35,14 @@ function App() {
        <CartContext.Provider value = {{ cart , setCart }}>
         <Navigation />
         <Routes>
-          <Route path="/react-cart/" Component={Home} exact  />
-          <Route path="/react-cart/products/" exact Component={ProductsPage} />
-          <Route path="/react-cart/products/:_id"  Component={SingleProduct} />
-          <Route path="/react-cart/cart" Component={Cart} />
+          <Route path="/" Component={Home} exact  />
+          <Route path="/react-cart" Component={Home} exact  />
+          <Route path="/products/" exact Component={ProductsPage} />
+          <Route path="react-cart/products/" exact Component={ProductsPage} />
+          <Route path="/products/:_id"  Component={SingleProduct} />
+          <Route path="react-cart/products/:_id"  Component={SingleProduct} />
+          <Route path="/cart" Component={Cart} />
+          <Route path="react-cart/cart" Component={Cart} />
         </Routes>
         </CartContext.Provider>
       </BrowserRouter>
