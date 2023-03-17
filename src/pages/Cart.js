@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import  {CartContext} from "../CartContext";
-
+import EmptyCart from '../assets/empty-cart.png'
 
 
 function Cart(){
@@ -120,7 +120,7 @@ function Cart(){
 
         </div>
         :
-        <img className = "mx-auto w-1/2 mt-12 py-5 "src = "/images/empty-cart.png" alt = "empty-cart"  />
+        <img className = "mx-auto w-1/2 mt-12 py-5 "src ={EmptyCart} alt = "empty-cart"  />
 
     );
 }
