@@ -29,7 +29,7 @@ function Navigation(){
          <li>
           <Link to="/cart">
            <div  style={cartStyle}>
-             <span className="mr-2">{cart.totalItems ? cart.totalItems : 0}</span>
+             <span className="mr-2">{cart?.totalItems ? cart.totalItems : 0}</span>
              <img src={Cart} alt="cart-icon" />
            </div>
           </Link>
