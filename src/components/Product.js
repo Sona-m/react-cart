@@ -36,7 +36,7 @@ function Product(props){
     }
 
     return(
-       <Link to = {`react-cart/products/${product._id}`}>
+       <Link to = {`/products/${product._id}`}>
         <div>
                 <img src= {product.image} alt="pizza" />
                 <div className="text-center">
