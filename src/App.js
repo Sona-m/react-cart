@@ -36,7 +36,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" Component={Home} exact  />
-          <Route path="/react-cart" Component={Home} exact  />
+          <Route path="/react-cart/" Component={Home} exact  />
           <Route path="/products/" exact Component={ProductsPage} />
           <Route path="react-cart/products/" exact Component={ProductsPage} />
           <Route path="/products/:_id"  Component={SingleProduct} />
